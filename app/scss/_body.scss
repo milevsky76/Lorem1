@@ -28,14 +28,41 @@ img {
 }
 
 .container {
-  max-width: 1400px;
+  width: 1400px;
   margin: 0 auto;
   padding: 0 100px;
 }
 
 @media (max-width: 640px) {
   .container {
+    width: 640px;
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 16px;
+
+  color: #2D2D2D;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%; //28px
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #17C182;
+  border-radius: 100px;
+
+  &:hover,
+  &:focus {
+    color: #FFF;
+    background-color: #17C182;
   }
 }
 
