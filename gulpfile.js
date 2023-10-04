@@ -92,7 +92,7 @@ function building() {
       'app/img/*.*',
       // '!app/img/*.svg',
       // 'app/img/sprite.svg',
-      'app/js/main.min.js',
+      'app/js/*.min.js',
       'app/*.html'
     ], {
       base: 'app'
