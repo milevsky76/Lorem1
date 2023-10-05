@@ -13,13 +13,13 @@
   justify-content: space-between;
 }
 
-.how-work__image-wrap {
+.how-work__image {
   width: 374px;
   height: 233px;
-}
-
-.how-work__image {
-  display: block;
+  background-image: url('../img/how-work.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .how-work__right {
@@ -50,7 +50,7 @@
     margin-bottom: 23px;
   }
 
-  .how-work__image-wrap {
+  .how-work__image {
     display: none;
   }
 

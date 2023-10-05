@@ -51,13 +51,14 @@ img {
 
 .button {
   display: inline-block;
-  padding: 16px;
+  padding: 15px;
 
   color: #2D2D2D;
   font-size: 20px;
   font-weight: 500;
   line-height: 140%; //28px
   text-align: center;
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #17C182;
   border-radius: 100px;

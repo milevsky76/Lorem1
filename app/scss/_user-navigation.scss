@@ -1,9 +1,12 @@
 .user-navigation {
   display: flex;
   gap: 10px;
+  margin: 0;
+  margin-left: 89px;
   padding: 8px 10px;
   background-color: #FAFAFA;
   border-radius: 30px;
+  list-style: none;
 }
 
 .user-navigation__link {
@@ -12,6 +15,7 @@
   color: #2D2D2D;
   font-weight: 500;
   line-height: 140%; //22.4px;
+  text-decoration: none;
   border-radius: 30px;
   border: 1px solid #17C182;
 
@@ -24,6 +28,11 @@
     padding: 11px 10px;
   }
 
+  &--active {
+    color: #FFF;
+    background-color: #17C182;
+  }
+
   &:hover,
   &:focus {
     color: #FFF;
@@ -32,6 +41,10 @@
 
   svg {
     fill: #17C182;
+  }
+
+  &--active svg {
+    fill: #FFF;
   }
 
   &:hover svg,
@@ -44,9 +57,18 @@
 @media (max-width:640px) {
   .user-navigation {
     gap: 0;
+    margin-left: 0;
   }
 
   .user-navigation__link--profile {
     display: none;
+  }
+}
+
+@media (max-width:320px) {
+  .user-navigation__link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%; //16.8px
   }
 }

@@ -1,9 +1,12 @@
 .site-navigation {
   display: flex;
   gap: 5px;
+  margin: 0;
+  margin-left: auto;
   padding: 7px 15px;
   background-color: #FAFAFA;
   border-radius: 30px;
+  list-style: none;
 }
 
 .site-navigation__link {
@@ -12,6 +15,7 @@
   color: #2D2D2D;
   font-weight: 500;
   line-height: 140%; //22.4px;
+  text-decoration: none;
   border-radius: 30px;
 
   &:hover:not(.site-navigation__link--active),

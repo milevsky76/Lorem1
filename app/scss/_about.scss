@@ -6,20 +6,22 @@
 }
 
 .about__title {
-  width: 590px; //49.16666666666667%;
-  color: #2D2D2D;
+  margin: 0;
+  padding: 0;
+  width: 590px;
   font-size: 48px;
   font-weight: 600;
   line-height: 120%; //57.6px
 }
 
-.about__wrap-left {
-  padding-top: 12px;
-  width: 590px; //49.16666666666667%;
+.about__wrap-right {
+  padding-top: 7px;
+  width: 590px;
 }
 
 .about__descriptor {
-  color: #2D2D2D;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 140%; //25.2px
 }
@@ -30,9 +32,9 @@
 }
 
 .about__source-wrap {
-  // width: 1200px;
-  // height: 700px;
-  margin-top: 25px;
+  width: 1200px;
+  height: 700px;
+  margin-top: 30px;
 }
 
 .about__image {
@@ -48,7 +50,7 @@
     margin-bottom: 20px;
   }
 
-  .about__wrap-left {
+  .about__wrap-right {
     padding-top: 0;
     width: 100%;
   }
@@ -58,6 +60,8 @@
   }
 
   .about__source-wrap {
+    width: 620px;
+    height: 360px;
     margin-top: 20px;
   }
 }
@@ -76,11 +80,25 @@
     display: none;
   }
 
-  .about__wrap-left {
+  .about__wrap-right {
     order: 1;
   }
 
   .about__source-wrap {
+    width: 300px;
+    height: 400px;
     margin-top: 0;
   }
+
+  .about__reservation {
+    color: #FFF;
+    background-color: #17C182;
+
+    &:hover,
+    &:focus {
+      color: #2D2D2D;
+      background-color: #FFF;
+    }
+  }
+
 }
