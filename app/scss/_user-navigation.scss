@@ -4,7 +4,7 @@
   margin: 0;
   margin-left: 89px;
   padding: 8px 10px;
-  background-color: #FAFAFA;
+  background-color: var(--c4);
   border-radius: 30px;
   list-style: none;
 }
@@ -12,12 +12,12 @@
 .user-navigation__link {
   display: block;
   padding: 10px 24px;
-  color: #2D2D2D;
+  color: var(--c2);
   font-weight: 500;
   line-height: 140%; //22.4px;
   text-decoration: none;
   border-radius: 30px;
-  border: 1px solid #17C182;
+  border: 1px solid var(--c3);
 
   &--profile {
     display: flex;
@@ -29,27 +29,27 @@
   }
 
   &--active {
-    color: #FFF;
-    background-color: #17C182;
+    color: var(--c1);
+    background-color: var(--c3);
   }
 
   &:hover,
   &:focus {
-    color: #FFF;
-    background-color: #17C182;
+    color: var(--c1);
+    background-color: var(--c3);
   }
 
   svg {
-    fill: #17C182;
+    fill: var(--c3);
   }
 
   &--active svg {
-    fill: #FFF;
+    fill: var(--c1);
   }
 
   &:hover svg,
   &:focus svg {
-    fill: #FFF;
+    fill: var(--c1);
   }
 }
 

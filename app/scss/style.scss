@@ -1,8 +1,7 @@
-// @import '_normalize';
+// Шрифты
+@import '_fonts';
 
-// Обводка
-// @import '_outline-settings';
-// @import '_outline';
+@import '_normalize';
 
 // Переменные
 @import '_variables';
@@ -23,3 +22,10 @@
 @import '_cabinet';
 
 @import '_specialists';
+
+@import '_virtual-tour';
+@import '_video';
+
+@import '_view-offices';
+
+@import '_main-footer';

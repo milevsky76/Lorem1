@@ -1,29 +1,35 @@
 .how-work {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 20px;
   border-radius: 25px;
-  background-color: #FAFAFA;
+  background-color: var(--c4);
 }
 
 .how-work__left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1 0 auto;
 }
 
 .how-work__image {
   width: 374px;
   height: 233px;
-  background-image: url('../img/how-work.png');
+  background-image: url('../img/tree_1200.jpg');
+  // background-image: image-set(url('../img/tree_1200.webp') type('image/webp'), url('../img/tree_1200.jpg') type('image/jpeg'));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 25px;
+
+  @supports (background-image: url('../img/tree_1200.webp')) {
+    background-image: url('../img/tree_1200.webp');
+  }
 }
 
 .how-work__right {
-  width: 570px;
+  flex: 0 0 570px;
 }
 
 .how-work_title {
@@ -42,7 +48,7 @@
 @media (max-width:640px) {
   .how-work {
     display: block;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   }
 
   .how-work__left {
@@ -65,7 +71,7 @@
 
 @media (max-width:320px) {
   .how-work {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     padding: 17px 10px 20px;
   }
 

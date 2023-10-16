@@ -1,0 +1,149 @@
+.view-offices {
+  display: grid;
+  grid-template-areas:
+    'title catalog'
+    'offers catalog'
+    'button button';
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  background-color: var(--c4);
+}
+
+.view-offices__title {
+  grid-area: title;
+  width: 570px;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 120%; //43.2px
+}
+
+.view-offices__title-mobile {
+  display: none;
+}
+
+.view-offices__group {
+  width: 570px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: var(--c1);
+}
+
+.view-offices__group:nth-of-type(1) {
+  grid-area: offers;
+}
+
+.view-offices__group:nth-of-type(2) {
+  grid-area: catalog;
+  min-height: 276px;
+  border: 1px solid var(--c3);
+}
+
+.view-offices__subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%; //28px
+}
+
+.view-offices__text {
+  margin: 0;
+  padding: 0;
+  line-height: 120%; //19.2px
+  opacity: 0.5;
+}
+
+.view-offices__logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin-top: 40px;
+  margin-left: auto;
+  background-color: var(--c4);
+  border-radius: 15px;
+}
+
+.view-offices__logo {
+  width: 50px;
+}
+
+.view-offices__button {
+  grid-area: button;
+  color: var(--c4);
+  background-color: var(--c3);
+
+  &:hover,
+  &:focus {
+    color: var(--c2);
+    background-color: var(--c1);
+  }
+}
+
+
+@media (max-width:640px) {
+  .view-offices {
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .view-offices__title {
+    margin-top: 9px;
+    margin-bottom: 30px;
+  }
+
+  .view-offices__group:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+
+  .view-offices__group:nth-of-type(2) {
+    min-height: auto;
+    border: none;
+  }
+
+  .view-offices__logo-wrap {
+    display: none;
+  }
+
+  .view-offices__button {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:320px) {
+  .view-offices {
+    display: block;
+    padding: 20px 10px 10px;
+    margin-bottom: 50px;
+  }
+
+  .view-offices__title {
+    display: none;
+  }
+
+  .view-offices__title-mobile {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 120%; //43.2px
+  }
+
+  .view-offices__group {
+    width: auto;
+  }
+
+  .view-offices__group:nth-of-type(1) {
+    margin-bottom: 12px;
+  }
+}

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soulhelp</title>
+  <title>Lorem</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Medium.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-SemiBold.woff2" type="font/woff2" as="font">
 
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -16,37 +16,38 @@
 <body>
   <div class="container">
     <header class="header">
-      <a class="logo">
-        <img src="img/logo.svg" alt="Логотип">
+      <a class="header__logo logo">
+        <svg width="60" height="60">
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
       </a>
 
       <ul class="site-navigation">
         <li>
-          <a class="site-navigation__link site-navigation__link--active">Главная</a>
+          <a href="#" class="site-navigation__link active">Lorem</a>
         </li>
         <li>
-          <a href="#" class="site-navigation__link">Кабинеты</a>
+          <a href="#" class="site-navigation__link">Ipsum</a>
         </li>
         <li>
-          <a href="#" class="site-navigation__link">Цены</a>
+          <a href="#" class="site-navigation__link">Dolor</a>
         </li>
         <li>
-          <a href="#" class="site-navigation__link">Вопросы</a>
+          <a href="#" class="site-navigation__link">Sit</a>
         </li>
         <li>
-          <a href="#" class="site-navigation__link">Контакты</a>
+          <a href="#" class="site-navigation__link">Amet</a>
         </li>
       </ul>
 
       <ul class="user-navigation">
         <li>
-          <a href="#" class="user-navigation__link">Регистрация</a>
+          <a href="#" class="user-navigation__link">Consectetur</a>
         </li>
         <li>
           <a href="#" class="user-navigation__link user-navigation__link--profile">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-              <path
-                d="M8 8a4 4 0 100-8 4 4 0 000 8zm0-6.667a2.667 2.667 0 110 5.334 2.667 2.667 0 010-5.334zm0 8.001a6.007 6.007 0 00-6 6 .666.666 0 101.333 0 4.667 4.667 0 019.334 0 .667.667 0 101.333 0 6.007 6.007 0 00-6-6z" />
+            <svg width="16" height="16">
+              <use xlink:href="./img/sprite.svg#user"></use>
             </svg>
           </a>
         </li>
@@ -54,65 +55,333 @@
     </header>
 
     <section class="about">
-      <h1 class="about__title">Уютные кабинеты для работы психологов рядом с метро</h1>
-      <div class="about__wrap-left">
-        <p class="about__descriptor">Автоматизированный сервис почасовой аренды кабиентов, где вы можете самостоятельно
-          управлять своими бронированиями, без контакта с администратором, головойной боли о поиске помещения,
-          ежемесячной
-          платы и уборки</p>
-        <a href="#" class="about__reservation button">Забронировать кабинет</a>
+      <h1 class="about__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+      <div class="about__wrap-right">
+        <p class="about__descriptor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis repellendus
+          eius alias dolorum sit quasi illo, quidem maxime labore, fugit, molestias aperiam? Vero, nostrum?</p>
+        <a href="#" class="about__reservation button">Lorem ipsum</a>
       </div>
       <div class="about__source-wrap">
         <picture>
-          <!-- <source media="(max-width: 320px)" srcset="img/mockup_300.avif" type="image/avif">
-          <source media="(max-width: 620px)" srcset="img/mockup_620.avif" type="image/avif">
-          <source srcset="img/mockup_1200.avif" type="image/avif">
+          <source srcset="img/workspace_320.webp" media="(max-width: 320px)" type="image/webp">
+          <source srcset="img/workspace_640.webp" media="(max-width: 640px)" type="image/webp">
+          <source srcset="img/workspace_1200.webp" type="image/webp">
 
-          <source media="(max-width: 320px)" srcset="img/mockup_300.webp" type="image/webp">
-          <source media="(max-width: 620px)" srcset="img/mockup_620.webp" type="image/webp">
-          <source srcset="img/mockup_1200.webp" type="image/webp"> -->
-
-          <source media="(max-width: 320px)" srcset="img/mockup_300.png">
-          <source media="(max-width: 620px)" srcset="img/mockup_620.png">
-          <img class="about__image" src="img/mockup_1200.png" alt="Mobile mockup">
+          <source srcset="./img/workspace_320.jpg" media="(max-width: 320px)">
+          <source srcset="./img/workspace_640.jpg" media="(max-width: 640px)">
+          <img class="about__image" src="./img/workspace_1200.jpg" alt="Workspace">
         </picture>
       </div>
     </section>
 
     <section class="how-work">
       <div class="how-work__left">
-        <h2 class="how-work_title">Как это работает?</h2>
-        <div class="how-work__image-wrap">
-          <img src="./img/how-work.png" class="how-work__image" alt="">
-        </div>
+        <h2 class="how-work_title">Lorem ipsum dolor sit?</h2>
+        <div class="how-work__image"></div>
       </div>
       <div class="how-work__right">
         <div class="slider__list">
           <div class="slider__item">
-            <h3 class="slider__title">Регистрация</h3>
-            <p class="slider__text">Пройдите простой процесс регистрации и получите доступ ко всем нашим кабинетам</p>
-            <p class="slider__number">1</p>
+            <h3 class="slider__title">Lorem</h3>
+            <p class="slider__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ducimus aliquid</p>
+            <p class="slider__number">I</p>
           </div>
           <div class="slider__item">
-            <h3 class="slider__title">Выбор кабинета</h3>
-            <p class="slider__text">Все наши кабинеты со свежим ремонтом выполненном в скандинавском стиле</p>
-            <p class="slider__number">2</p>
+            <h3 class="slider__title">Lorem ipsum</h3>
+            <p class="slider__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, accusantium</p>
+            <p class="slider__number">II</p>
           </div>
           <div class="slider__item">
-            <h3 class="slider__title">Оплата</h3>
-            <p class="slider__text">Мы принимаем оплату Visa, Mastercard и карты “Мир”.</p>
-            <p class="slider__number">3</p>
+            <h3 class="slider__title">Lorem</h3>
+            <p class="slider__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+            <p class="slider__number">III</p>
           </div>
           <div class="slider__item">
-            <h3 class="slider__title">Кабинет ваш</h3>
-            <p class="slider__text">Кабинет в вашем полном распоряжении в выбранные вами часы работы</p>
+            <h3 class="slider__title">Lorem ipsum</h3>
+            <p class="slider__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, accusantium</p>
             <p class="slider__number"><span class="slider__number-dot"></span></p>
           </div>
         </div>
 
-        <a href="#" class="how-work__button button">Остались вопросы?</a>
+        <a href="#" class="how-work__button button">Lorem, ipsum dolor?</a>
       </div>
     </section>
+
+    <section class="cabinet">
+      <h2 class="cabinet__title">Lorem ipsum</h2>
+
+      <div class="cabinet__image-wrap">
+        <div class="cabinet__image-item active" data-img="1">
+          <picture>
+            <source srcset="img/offices1_320.webp" media="(max-width: 320px)" type="image/webp">
+            <source srcset="img/offices1_640.webp" media="(max-width: 640px)" type="image/webp">
+            <source srcset="img/offices1_1200.webp" type="image/webp">
+
+            <source srcset="./img/offices1_320.jpg" media="(max-width: 320px)">
+            <source srcset="./img/offices1_640.jpg" media="(max-width: 640px)">
+            <img class="cabinet__image" src="./img/offices1_1200.jpg" alt="Our office" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="cabinet__image-item" data-img="2">
+          <picture>
+            <source srcset="img/offices2_320.webp" media="(max-width: 320px)" type="image/webp">
+            <source srcset="img/offices2_640.webp" media="(max-width: 640px)" type="image/webp">
+            <source srcset="img/offices2_1200.webp" type="image/webp">
+
+            <source srcset="./img/offices2_320.jpg" media="(max-width: 320px)">
+            <source srcset="./img/offices2_640.jpg" media="(max-width: 640px)">
+            <img class="cabinet__image" src="./img/offices2_1200.jpg" alt="Our office" loading="lazy">
+          </picture>
+        </div>
+      </div>
+
+      <div class="cabinet__list">
+        <a href="#" class="cabinet__item active" data-img="1">
+          <h3 class="cabinet__subtitle">Lorem ipsum</h3>
+          <p class="cabinet__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fuga veniam
+            labore porro ducimus quia nihil esse neque, repellat ullam. Iste voluptas delectus illum rem commodi minima
+            sapiente nostrum vero corporis, reprehenderit quos laborum ipsa sed.</p>
+          <span class="cabinet__arrow">
+            <svg width="24" height="24">
+              <use xlink:href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </span>
+        </a>
+
+        <a href="#" class="cabinet__item" data-img="2">
+          <h3 class="cabinet__subtitle">Lorem ipsum</h3>
+          <p class="cabinet__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit hic
+            iusto nihil minima est, harum minus nostrum iste illum. Dicta porro rem recusandae dolore voluptatem?</p>
+          <span class="cabinet__arrow">
+            <svg width="24" height="24">
+              <use xlink:href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="specialists">
+      <h2 class="specialists__title">Lorem ipsum dolor?</h2>
+
+      <div class="specialists__wrap">
+        <ul class="specialists__list">
+          <li class="specialists__item">
+            <button class="specialists__tablink active">Lorem</button>
+            <div class="specialists__tabcontent">
+              <p class="specialists__text">Lorem ipsum dolor sit amet consectetur, <b>adipisicing</b> elit. Sit corporis
+                ratione fugit, illum dolorem expedita? Ad, repudiandae. Necessitatibus, delectus? Asperiores eveniet
+                consequatur in, dolorum, <b>velit</b> doloribus ipsa maxime consectetur voluptates neque, eligendi vero
+                sed?
+                Corrupti facilis similique aperiam delectus doloribus quisquam fuga, adipisci voluptatum placeat.</p>
+              <picture>
+                <source srcset="img/specialist1_640.webp" media="(max-width: 640px)" type="image/webp">
+                <source srcset="img/specialist1_1200.webp" type="image/webp">
+
+                <source srcset="./img/specialist1_640.jpg" media="(max-width: 640px)">
+                <img src="./img/specialist1_1200.jpg" class="specialists__image" alt="Lorem ipsum dolor" loading="lazy">
+              </picture>
+            </div>
+          </li>
+          <li class="specialists__item">
+            <button class="specialists__tablink">Lorem ipsum dolor</button>
+            <div class="specialists__tabcontent">
+              <p class="specialists__text">Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Quas vel ex
+                reiciendis voluptatem, similique ducimus inventore placeat non aperiam molestias consequuntur aut,
+                possimus molestiae <b>recusandae</b> illum rerum qui eligendi expedita blanditiis sit. Nam est quasi
+                culpa
+                debitis illum quibusdam laudantium totam sed similique? Fugiat atque, dolorem neque delectus vel fugit!
+              </p>
+              <picture>
+                <source srcset="img/specialist2_640.webp" media="(max-width: 640px)" type="image/webp">
+                <source srcset="img/specialist2_1200.webp" type="image/webp">
+
+                <source srcset="./img/specialist2_640.jpg" media="(max-width: 640px)">
+                <img src="./img/specialist2_1200.jpg" class="specialists__image" alt="Lorem ipsum dolor" loading="lazy">
+              </picture>
+            </div>
+          </li>
+          <li class="specialists__item">
+            <button class="specialists__tablink">Lorem ipsum</button>
+            <div class="specialists__tabcontent">
+              <p class="specialists__text">Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Voluptas
+                ducimus
+                eveniet cupiditate similique excepturi <b>porro</b> consectetur earum! Voluptatibus nemo expedita
+                laborum fugit
+                inventore quo, a facilis aliquam, ipsum minus natus repellendus, libero ratione officia! Soluta?</p>
+              <picture>
+                <source srcset="img/specialist3_640.webp" media="(max-width: 640px)" type="image/webp">
+                <source srcset="img/specialist3_1200.webp" type="image/webp">
+
+                <source srcset="./img/specialist3_640.jpg" media="(max-width: 640px)">
+                <img src="./img/specialist3_1200.jpg" class="specialists__image" alt="Lorem ipsum" loading="lazy">
+              </picture>
+            </div>
+          </li>
+          <li class="specialists__item">
+            <button class="specialists__tablink">Lorem</button>
+            <div class="specialists__tabcontent">
+              <p class="specialists__text">Lorem ipsum dolor, sit amet consectetur <b>adipisicing</b> elit. Quaerat
+                molestias
+                repellendus minus minima sapiente, eaque nemo accusamus ad corporis eligendi adipisci numquam assumenda
+                id quis dolorem recusandae illo doloremque eos atque voluptatum nihil reiciendis molestiae <b>velit</b>
+                labore?
+                Sunt, quam. Iure!</p>
+              <picture>
+                <source srcset="img/specialist1_640.webp" media="(max-width: 640px)" type="image/webp">
+                <source srcset="img/specialist1_1200.webp" type="image/webp">
+
+                <source srcset="./img/specialist1_640.jpg" media="(max-width: 640px)">
+                <img src="./img/specialist1_1200.jpg" class="specialists__image" alt="Lorem" loading="lazy">
+              </picture>
+            </div>
+          </li>
+          <li class="specialists__item">
+            <button class="specialists__tablink">Lorem, ipsum dolor?</button>
+            <div class="specialists__tabcontent">
+              <p class="specialists__text">Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Deserunt
+                praesentium
+                neque amet? Nemo totam eveniet dolores, odit commodi rem similique eos sapiente ducimus earum at
+                laudantium maxime <b>esse</b> tenetur. Iusto maxime deserunt aliquam commodi eum ut, dolores vitae
+                veniam
+                tenetur veritatis harum libero impedit beatae?</p>
+              <picture>
+                <source srcset="img/specialist2_640.webp" media="(max-width: 640px)" type="image/webp">
+                <source srcset="img/specialist2_1200.webp" type="image/webp">
+
+                <source srcset="./img/specialist2_640.jpg" media="(max-width: 640px)">
+                <img src="./img/specialist2_1200.jpg" class="specialists__image" alt="Lorem ipsum dolor" loading="lazy">
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#" class="specialists__button button">Lorem ipsum</a>
+      </div>
+    </section>
+
+    <section class="virtual-tour">
+      <div class="video">
+        <a class="video__link" href="https://youtu.be/4JS70KB9GS0">
+          <picture>
+            <source srcset="img/video_320.webp" media="(max-width: 320px)" type="image/webp">
+            <source srcset="img/video_640.webp" media="(max-width: 640px)" type="image/webp">
+            <source srcset="img/video_1200.webp" type="image/webp">
+
+            <source srcset="./img/video_320.jpg" media="(max-width: 320px)">
+            <source srcset="./img/video_640.jpg" media="(max-width: 640px)">
+            <img class="video__media" src="./img/video_1200.jpg" alt="Video" loading="lazy">
+          </picture>
+        </a>
+        <p class="video__logo">Lorem</p>
+        <h2 class="video__name">Lorem ipsum dolor sit amet</h2>
+        <button class="video__button" aria-label="Play video">
+          <svg width="80" height="80">
+            <use xlink:href="./img/sprite.svg#play"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="view-offices">
+      <h2 class="view-offices__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+      <h2 class="view-offices__title-mobile">Lorem ipsum dolor sit amet!</h2>
+      <div class="view-offices__group">
+        <h3 class="view-offices__subtitle">Lorem</h3>
+        <p class="view-offices__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quod porro
+          dignissimos repellendus ab?</p>
+      </div>
+      <div class="view-offices__group">
+        <h3 class="view-offices__subtitle">Lorem</h3>
+        <p class="view-offices__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum vero quos!
+        </p>
+        <div class="view-offices__logo-wrap">
+          <svg width="60" height="60">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </div>
+      </div>
+      <a href="#" class="view-offices__button button">Lorem</a>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-footer__column">
+        <p class="main-footer__logo logo">
+          <svg width="60" height="60">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </p>
+        <p class="main-footer__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam ut, veniam,
+          molestias cum sunt eius harum a, ex sed dolorem corrupti aliquid.</p>
+        <p class="main-footer__copyright">© Copyright 2023 All rights reserved</p>
+      </div>
+      <ul class="main-footer__topics">
+        <li class="main-footer__topic-documents topic topic--documents">
+          <h2 class="topic__title">Lorem</h2>
+          <ul class="topic__navigation">
+            <li>
+              <a href="#" class="topic__link">Lorem ipsum</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem ipsum dolor</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem ipsum</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-footer__topic-contacts topic topic--contacts">
+          <h2 class="topic__title">Lorem</h2>
+          <ul class="topic__navigation">
+            <li class="topic__navigation-mail">
+              <a href="mailto:example@ex.ex" class="topic__link">example@ex.ex</a>
+            </li>
+            <li class="topic__navigation-phone">
+              <a href="tel:+11111111111" class="topic__link">+1 111 111 11 11</a>
+            </li>
+            <li class="topic__navigation-how">
+              <a href="#" class="topic__link">Lorem, ipsum dolor</a>
+            </li>
+            <li class="topic__navigation-address">
+              <a href="#" class="topic__link">Lorem ipsum dolor sit amet consectetur 25/52</a>
+              <a href="#" class="topic__link topic__link--mobile">Lorem ipsum dolor sit amet consectetur 25</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-footer__topic-social topic topic--social">
+          <h2 class="topic__title">Lorem, ipsum dolor</h2>
+          <ul class="topic__navigation">
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-footer__topic-payments topic topic--payments">
+          <h2 class="topic__title">Lorem, ipsum</h2>
+          <ul class="topic__navigation">
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+            <li>
+              <a href="#" class="topic__link">Lorem</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

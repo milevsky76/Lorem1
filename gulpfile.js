@@ -33,18 +33,27 @@ function sprite() {
 
 function images() {
   return src(['app/img/src/*.*', '!app/img/src/*.svg'])
+    // .pipe(newer('app/img'))
+    // .pipe(avift({
+    //   quality: 50
+    // }))
+
+    // .pipe(src('app/img/src/*.*'))
     .pipe(newer('app/img'))
-    .pipe(avift({
-      quality: 50
+    .pipe(webp({
+      quality: 100
     }))
 
     .pipe(src('app/img/src/*.*'))
     .pipe(newer('app/img'))
-    .pipe(webp())
-
-    .pipe(src('app/img/src/*.*'))
-    .pipe(newer('app/img'))
-    .pipe(imagemin())
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{
+        removeViewBox: false
+      }],
+      interlaced: true,
+      optimizationLevel: 3
+    }))
 
     .pipe(dest('app/img'))
 }
@@ -92,6 +101,7 @@ function building() {
       'app/img/*.*',
       // '!app/img/*.svg',
       // 'app/img/sprite.svg',
+      'app/fonts/*.*',
       'app/js/*.min.js',
       'app/*.html'
     ], {

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .about__title {
@@ -35,6 +35,8 @@
   width: 1200px;
   height: 700px;
   margin-top: 30px;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .about__image {
@@ -43,7 +45,7 @@
 
 @media (max-width:640px) {
   .about {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   }
 
   .about__title {
@@ -68,7 +70,7 @@
 
 @media (max-width:320px) {
   .about {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .about__title {
@@ -91,13 +93,13 @@
   }
 
   .about__reservation {
-    color: #FFF;
-    background-color: #17C182;
+    color: var(--c1);
+    background-color: var(--c3);
 
     &:hover,
     &:focus {
-      color: #2D2D2D;
-      background-color: #FFF;
+      color: var(--c2);
+      background-color: var(--c1);
     }
   }
 

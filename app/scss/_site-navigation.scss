@@ -4,7 +4,7 @@
   margin: 0;
   margin-left: auto;
   padding: 7px 15px;
-  background-color: #FAFAFA;
+  background-color: var(--c4);
   border-radius: 30px;
   list-style: none;
 }
@@ -12,22 +12,22 @@
 .site-navigation__link {
   display: block;
   padding: 12px 20px;
-  color: #2D2D2D;
+  color: var(--c2);
   font-weight: 500;
   line-height: 140%; //22.4px;
   text-decoration: none;
   border-radius: 30px;
 
-  &:hover:not(.site-navigation__link--active),
-  &:focus:not(.site-navigation__link--active) {
+  &.active {
+    color: var(--c1);
+    background-color: var(--c3);
+    cursor: auto;
+  }
+
+  &:hover:not(.active),
+  &:focus:not(.active) {
     background-color: #F3F3F3;
   }
-}
-
-.site-navigation__link--active {
-  color: #FFF;
-  background-color: #17C182;
-  cursor: auto;
 }
 
 @media (max-width:640px) {

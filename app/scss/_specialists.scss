@@ -1,10 +1,10 @@
 .specialists {
   position: relative;
   min-height: 566px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 23px 20px 20px;
   border-radius: 25px;
-  background-color: #FAFAFA;
+  background-color: var(--c4);
 }
 
 .specialists__wrap {
@@ -37,7 +37,7 @@
   height: 60px;
   padding: 10px;
 
-  color: #2D2D2D;
+  color: var(--c2);
   font-size: 18px;
   font-weight: 400;
   line-height: 140%; //25.2px
@@ -50,8 +50,8 @@
   cursor: pointer;
 
   &.active {
-    // color: #FFF;
-    background-color: #17C182;
+    color: var(--c1);
+    background-color: var(--c3);
   }
 }
 
@@ -80,10 +80,10 @@
   line-height: 120%; //19.2px
 
   border-radius: 25px;
-  background-color: #FFF;
+  background-color: var(--c1);
 
   b {
-    color: #17C182;
+    color: var(--c3);
     font-weight: normal;
   }
 }
@@ -92,6 +92,7 @@
   display: block;
   width: 544px;
   height: 506px;
+  border-radius: 25px;
 }
 
 .specialists__button {
@@ -107,9 +108,9 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--c1);
     border-radius: 50%;
-    color: #2D2D2D;
+    color: var(--c2);
   }
 }
 
@@ -117,12 +118,13 @@
 @media (max-width:640px) {
   .specialists {
     min-height: 655px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     padding: 20px;
   }
 
   .specialists__title {
-    margin-bottom: 112px;
+    margin-bottom: 69px;
+    width: 275px;
   }
 
   .specialists__tabcontent {
@@ -153,7 +155,7 @@
 @media (max-width:320px) {
   .specialists {
     min-height: auto;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     padding: 15px 10px 10px;
   }
 
@@ -172,11 +174,11 @@
     border: 1px solid #F3F3F3;
 
     &.active {
-      // color: #FFF;
+      color: var(--c2);
       height: auto;
       padding-bottom: 5px;
-      background-color: #FFF;
-      border: 1px solid #17C182;
+      background-color: var(--c1);
+      border: 1px solid var(--c3);
       border-bottom: none;
       border-radius: 25px 25px 0 0;
     }
@@ -186,7 +188,7 @@
     content: '';
     width: 40px;
     height: 40px;
-    background-color: #FFF;
+    background-color: var(--c1);
     background-image: url('../img/arrow-up.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -194,12 +196,12 @@
   }
 
   .specialists__tablink.active::after {
-    background-color: #FAFAFA;
+    background-color: var(--c4);
     transform: rotate(180deg);
   }
 
   .specialists__tablink.active+.specialists__tabcontent {
-    border: 1px solid #17C182;
+    border: 1px solid var(--c3);
     border-top: none;
     border-radius: 0 0 25px 25px;
     overflow: hidden;

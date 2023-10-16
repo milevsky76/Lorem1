@@ -16,13 +16,13 @@ body {
   width: 100%;
   overflow-x: hidden;
 
-  color: #2D2D2D;
+  color: var(--c2);
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
 
-  background-color: #FFF;
+  background-color: var(--c1);
 }
 
 img {
@@ -53,20 +53,20 @@ img {
   display: inline-block;
   padding: 15px;
 
-  color: #2D2D2D;
+  color: var(--c2);
   font-size: 20px;
   font-weight: 500;
   line-height: 140%; //28px
   text-align: center;
   text-decoration: none;
   background-color: transparent;
-  border: 1px solid #17C182;
+  border: 1px solid var(--c3);
   border-radius: 100px;
 
   &:hover,
   &:focus {
-    color: #FFF;
-    background-color: #17C182;
+    color: var(--c1);
+    background-color: var(--c3);
   }
 }
 
